@@ -104,8 +104,8 @@ public class TicTacToe {
 			}
 		}
 
-        return win;
-    }
+		return win;
+	}
 
 	/**
 	 * Prints the current state of the game board.
@@ -119,10 +119,10 @@ public class TicTacToe {
 			System.out.print(row+1  + " ");
 			for (int col = 0; col < 3; col++) {
 				System.out.print("   |");
-				System.out.println(" " +
-				board[row][col]		 +" ");
-			if (col == 2)
-				System.out.println("    |");
+				System.out.print(" " +
+						board[row][col]		 +" ");
+				if (col == 2)
+					System.out.print("    |");
 			}
 			System.out.println();
 			System.out.println("   ----------------");
@@ -143,7 +143,7 @@ public class TicTacToe {
 		}
 		if (col < 1 || col > 3 ) {
 			return false;
-	    }
+		}
 		return true;
 	}
 }
